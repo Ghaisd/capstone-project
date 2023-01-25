@@ -1,5 +1,7 @@
 import { Box, Link, Stack } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 import React from "react";
+import { routes } from "../App";
 
 export const Nav = () => {
   return (
@@ -17,7 +19,7 @@ export const Nav = () => {
       <Stack
         direction="row"
         spacing={{ xs: 1, md: 4 }}
-        pt={2}
+        pt={3}
         sx={{
           a: {
             textDecoration: "none",
@@ -27,12 +29,24 @@ export const Nav = () => {
           },
         }}
       >
-        <Link>Home</Link>
-        <Link>About</Link>
-        <Link>Menu</Link>
-        <Link>Reservations</Link>
-        <Link>Order online</Link>
-        <Link>Login</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Home
+        </Link>
+        <Link component={RouterLink} to={routes.Home}>
+          About
+        </Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Menu
+        </Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Reservations
+        </Link>
+        <Link component={RouterLink} to={routes.Booking}>
+          Order online
+        </Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Login
+        </Link>
       </Stack>
     </Stack>
   );

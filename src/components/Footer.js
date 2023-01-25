@@ -1,5 +1,7 @@
 import { Box, Link, Stack } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 import React from "react";
+import { routes } from "../App";
 
 export const Footer = () => {
   return (
@@ -10,7 +12,6 @@ export const Footer = () => {
       pb={{ sm: 4, md: 0 }}
       component="footer"
       justifyContent="space-evenly"
-      mt="100vh"
       sx={{
         a: {
           textDecoration: "none",
@@ -29,39 +30,69 @@ export const Footer = () => {
       />
 
       <Stack width={200}>
-        <Link>Doormat Navigation</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Doormat Navigation
+        </Link>
 
-        <Link>Home</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Home
+        </Link>
 
-        <Link>About</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          About
+        </Link>
 
-        <Link>Menu</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Menu
+        </Link>
 
-        <Link>Reservations</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Reservations
+        </Link>
 
-        <Link>Order Online</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Order Online
+        </Link>
 
-        <Link>Login</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Login
+        </Link>
       </Stack>
 
       <Stack width={200}>
-        <Link>Contact</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Contact
+        </Link>
 
-        <Link>Address</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Address
+        </Link>
 
-        <Link>Phone Number</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Phone Number
+        </Link>
 
-        <Link>Email</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Email
+        </Link>
       </Stack>
 
       <Stack width={200}>
-        <Link>Social Media Links</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Social Media Links
+        </Link>
 
-        <Link>Address</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Address
+        </Link>
 
-        <Link>Phone Number</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Phone Number
+        </Link>
 
-        <Link>Email</Link>
+        <Link component={RouterLink} to={routes.Home}>
+          Email
+        </Link>
       </Stack>
     </Stack>
   );
