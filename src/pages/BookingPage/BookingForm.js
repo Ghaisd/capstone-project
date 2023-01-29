@@ -10,10 +10,9 @@ import {
 } from "@mui/material";
 import React, { useEffect, useMemo, useState } from "react";
 
-const timeOptions = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 const occasionOptions = ["Birthday", "Anniversary"];
 
-export const BookingForm = () => {
+export const BookingForm = ({ availableTimes }) => {
   const [date, setDate] = useState();
   const [time, setTime] = useState();
   const [nrOfGuests, setNrOfGuests] = useState(0);
@@ -72,7 +71,7 @@ export const BookingForm = () => {
               onChange={(e) => setTime(e.target.value)}
               sx={{ height: 40 }}
             >
-              {timeOptions.map((item, index) => (
+              {availableTimes.map((item, index) => (
                 <MenuItem key={index} value={item}>
                   {item}
                 </MenuItem>
