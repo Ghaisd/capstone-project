@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   FormGroup,
   Input,
@@ -15,7 +14,7 @@ const occasionOptions = ["Birthday", "Anniversary"];
 export const BookingForm = ({ availableTimes }) => {
   const [date, setDate] = useState();
   const [time, setTime] = useState();
-  const [nrOfGuests, setNrOfGuests] = useState(0);
+  const [nrOfGuests, setNrOfGuests] = useState();
   const [occasion, setOccasion] = useState("");
 
   const disabled = useMemo(
@@ -44,7 +43,7 @@ export const BookingForm = ({ availableTimes }) => {
         Book Now
       </Typography>
 
-      <Box display="flex" justifyContent="center" my={5} mb={29}>
+      <Stack direction="row" justifyContent="center" my={5} mb={29}>
         <FormGroup
           sx={{
             width: 0.1,
@@ -118,7 +117,7 @@ export const BookingForm = ({ availableTimes }) => {
             Make Your reservation
           </Button>
         </FormGroup>
-      </Box>
+      </Stack>
     </>
   );
 };

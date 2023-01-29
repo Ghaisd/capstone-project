@@ -46,11 +46,11 @@ export const Footer = () => {
           Menu
         </Link>
 
-        <Link component={RouterLink} to={routes.Home}>
+        <Link component={RouterLink} to={routes.Booking}>
           Reservations
         </Link>
 
-        <Link component={RouterLink} to={routes.Home}>
+        <Link component={RouterLink} to={routes.Booking}>
           Order Online
         </Link>
 
