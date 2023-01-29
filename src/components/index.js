@@ -1,6 +1,6 @@
 export * from "./CallToAction";
 export * from "./Chicago";
-export * from "./CustomerSay";
+export * from "./CustomerSay/CustomerSay";
 export * from "./Footer";
 export * from "./Header";
 export * from "./Main";

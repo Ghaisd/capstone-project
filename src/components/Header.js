@@ -9,6 +9,7 @@ export const Header = () => {
       justifyContent="space-evenly"
       py={12}
       bgcolor="#6e6e6e"
+      textAlign={{ xs: "center", md: "inherit" }}
     >
       <Stack spacing={2}>
         <Typography
@@ -22,7 +23,7 @@ export const Header = () => {
         <Typography variant="h6" color="white">
           Chicago
         </Typography>
-        <Typography width={212} color="white">
+        <Typography width={{ xs: 1, md: 212 }} color="white">
           We are a family owned Mediterranean restaurant, focused on traditional
           recipes served with a modern twist
         </Typography>
@@ -32,7 +33,7 @@ export const Header = () => {
             bgcolor: "#F4CE14",
             color: "white",
             borderRadius: 16,
-            width: 0.7,
+            width: { md: 0.7 },
           }}
         >
           Reserve a table
@@ -40,7 +41,9 @@ export const Header = () => {
       </Stack>
       <Box
         component="img"
-        src="https://i.pinimg.com/736x/93/ee/18/93ee18cd5a5d4b23527529e6a016c8f5--best-logo-design-best-logos.jpg"
+        src={
+          "https://i.pinimg.com/736x/93/ee/18/93ee18cd5a5d4b23527529e6a016c8f5--best-logo-design-best-logos.jpg"
+        }
       />
     </Stack>
   );

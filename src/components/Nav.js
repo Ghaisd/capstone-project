@@ -7,18 +7,21 @@ export const Nav = () => {
   return (
     <Stack
       component="nav"
-      direction="row"
+      direction={{ md: "row" }}
       justifyContent="space-around"
       spacing={2}
+      pb={{ xs: 2, md: 0 }}
     >
       <Box
         component="img"
         src="https://www.48hourslogo.com/oss/attachments/2022/01/13/347418572/fce5b08add13e667d5855320c8ab6b39.png"
         width={100}
+        pl={{ xs: "37%", md: 0 }}
       />
       <Stack
-        direction="row"
+        direction={{ md: "row" }}
         spacing={{ xs: 1, md: 4 }}
+        textAlign={{ xs: "center", md: "inherit" }}
         pt={3}
         sx={{
           a: {

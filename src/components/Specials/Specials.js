@@ -20,7 +20,12 @@ export const Specials = () => {
           Order Menu
         </Button>
       </Stack>
-      <Stack direction="row" spacing={6} justifyContent="center" pt={10}>
+      <Stack
+        direction={{ md: "row" }}
+        spacing={6}
+        justifyContent="center"
+        pt={10}
+      >
         <SpeicalCard
           imgSrc="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
           dishName="Greek salad"
