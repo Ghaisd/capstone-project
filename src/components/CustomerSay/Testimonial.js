@@ -5,7 +5,7 @@ import { times } from "lodash";
 
 export const Testimonial = ({ imgSrc, name, testimony }) => {
   return (
-    <Card sx={{ width: 400, height: 300 }}>
+    <Card sx={{ width: 400, height: 300 }} component="article">
       <Stack direction="row" spacing={1} variant="h4" my={3}>
         {times(5, (index) => (
           <StarIcon key={index} />

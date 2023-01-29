@@ -10,6 +10,7 @@ export const Header = () => {
       py={12}
       bgcolor="#6e6e6e"
       textAlign={{ xs: "center", md: "inherit" }}
+      component="section"
     >
       <Stack spacing={2}>
         <Typography

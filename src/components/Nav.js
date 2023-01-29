@@ -41,7 +41,7 @@ export const Nav = () => {
         <Link component={RouterLink} to={routes.Home}>
           Menu
         </Link>
-        <Link component={RouterLink} to={routes.Home}>
+        <Link component={RouterLink} to={routes.Booking}>
           Reservations
         </Link>
         <Link component={RouterLink} to={routes.Booking}>

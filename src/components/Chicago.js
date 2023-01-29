@@ -3,7 +3,12 @@ import React from "react";
 
 export const Chicago = () => {
   return (
-    <Stack direction={{ md: "row" }} justifyContent="center" my={20}>
+    <Stack
+      direction={{ md: "row" }}
+      justifyContent="center"
+      my={20}
+      component="section"
+    >
       <Stack width={{ md: 0.5 }}>
         <Typography variant="h3">Little Lemon</Typography>
         <Typography variant="h5">Chicago</Typography>

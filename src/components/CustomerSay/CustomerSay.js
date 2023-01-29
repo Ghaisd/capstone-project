@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { Testimonial } from "./Testimonial";
 
@@ -11,7 +11,7 @@ const img3 =
 
 export const CustomerSay = () => {
   return (
-    <>
+    <Box component="section">
       <Typography variant="h4" textAlign="center" py={6}>
         Testimonials
       </Typography>
@@ -32,6 +32,6 @@ export const CustomerSay = () => {
           testimony="Thanks for making the ONLY snack that’s totally pure and tastes great too!"
         />
       </Stack>
-    </>
+    </Box>
   );
 };
