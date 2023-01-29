@@ -39,7 +39,12 @@ export const BookingForm = ({ availableTimes }) => {
 
   return (
     <>
-      <Typography variant="h4" textAlign="center">
+      <Typography
+        variant="h4"
+        textAlign="center"
+        pl={{ xs: "25%", md: 0 }}
+        pt={5}
+      >
         Book Now
       </Typography>
 
